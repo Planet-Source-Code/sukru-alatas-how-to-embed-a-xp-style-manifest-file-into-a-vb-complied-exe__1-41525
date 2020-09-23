@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title></title>
+		<meta name="GENERATOR" content="Microsoft Visual Studio.NET 7.0">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+	</head>
+	<body>
+		<P><FONT face="Tahoma" size="2"> HOWTO: Embed a XP Style Manifest file into a VB 
+				Compiled EXE<br>
+				Step by step explanation;<br>
+				<br>
+				<STRONG>1)</STRONG> Add line below to a module in project<br>
+				<FONT color="blue">Declare Sub</FONT> InitCommonControls <FONT color="blue">Lib</FONT>
+				"comctl32.dll" ()<br>
+				<br>
+				<STRONG>2)</STRONG> Add lines below to all forms in project<br>
+				<FONT color="blue">Private Sub</FONT> Form_Initialize()<br>
+				<FONT color="blue">Call</FONT> InitCommonControls<br>
+				<FONT color="blue">End Sub</FONT>
+				<br>
+				<br>
+				<STRONG>3)</STRONG> Compile exe with normal way<br>
+				<br>
+				<STRONG>4)</STRONG> Download zip file that is given with this tutorial, and 
+				unzip it<br>
+				<br>
+				<STRONG>5)</STRONG> Download <EM>Resource Hacker™</EM> from </FONT><A href="http://www.users.on.net/johnson/resourcehacker/">
+				<FONT face="Tahoma" size="2">here</FONT></A><br>
+			<br>
+			<FONT face="Tahoma" size="2"><STRONG>6)</STRONG> Run program, then <EM>File&gt;Open</EM>
+				and select your compiled exe file<br>
+				<br>
+				<STRONG>7)</STRONG> Select <EM>Action&gt;Add</EM> a new Resource<br>
+				<br>
+				<STRONG>8)</STRONG> Select <EM>'Open file with new resource'</EM> and open <EM>'GeneralManifestForVB.txt'</EM>
+				file that was extract from zip file<br>
+				<br>
+				<STRONG>9)</STRONG> Enter info below to boxes<br>
+				<EM>Resource type</EM> = 24<br>
+				<EM>Resource name</EM> = 1<br>
+				<EM>Resource language</EM> = 1041<br>
+				<br>
+				<STRONG>10)</STRONG> Click <EM>'Add Resource'</EM>
+				<br>
+				<br>
+				<STRONG>11)</STRONG> Save EXE and run for testing<br>
+				<br>
+				<STRONG>12)</STRONG> Enjoy...<br>
+				<br>
+				&nbsp;<br>
+				<br>
+				additional informations;<br>
+				-&gt; Do not compress EXE with upx,<br>
+				-&gt; Place command button into a picture box if they has ugly frames after 
+				update EXE,<br>
+				-&gt; I do sorry for my bad english...<br>
+			</FONT>
+		</P>
+	</body>
+</html>
